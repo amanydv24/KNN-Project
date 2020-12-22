@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my page</title>
+</head>
+
+       <body bgcolor="pink">
+       	<form action="" method="post">
+       		{% csrf_token %}
+       		<p style="font-size:16pt;font-color:green;" align="center">
+       			<table border="0" bgcolor="tomato" align="center">
+       				<tr>
+       					<td>sepal length</td>
+       					<td>{{ e.sl }}</td>
+       				</tr>
+       				<tr>
+       					<td>sepal width</td>
+       					<td>{{ e.sw }}</td>
+       				</tr>
+       				<tr>
+       					<td>petal length</td>
+       					<td>{{ e.pl }}</td>
+       				</tr>
+       				<tr>
+       					<td>petal width</td>
+       					<td>{{ e.pw }}</td>
+       				</tr>
+       				<tr>
+       					<td colspan="2" align="center" >
+       						<button type="submit">predict
+       						</button>
+       					</td>
+       				</tr>
+       			</table>
+
+       			
+       		</p>
+       	</form>
+</body>
+</html>
